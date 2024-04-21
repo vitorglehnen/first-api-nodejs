@@ -21,7 +21,6 @@ app.get('/produtos/:id', async (req, res) => {
 app.delete('/produtos/:id', async (req, res) => {
     await produtos.excluir(req.params.id);
     res.sendStatus(204);
-    res.json('Produto excluído com sucesso');
 })
 
 app.post('/produtos', async (req, res) => {
